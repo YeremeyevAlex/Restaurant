@@ -1,0 +1,219 @@
+html {
+  scroll-behavior: smooth;
+}
+.container {
+	max-width: 1110px;
+	margin: auto;
+}
+header {
+	height: 100vh;
+	background: #0b0c0d url('img/header.jpg') center/cover;
+	color: #fff;
+}
+header .container {
+	position: relative;
+}
+#logo, #topmenu, #title {
+	position: absolute;
+}
+#logo {
+	top: 62px;
+}
+#topmenu {
+	top: 67px;
+	right: 0;
+} 
+#topmenu li {
+	display: inline-block;
+	padding: 0 20px;
+}
+#topmenu a {
+	font: 1em Verdana;
+	color: #fff;
+}
+#title {
+	top: 40vh;
+	text-align: center;
+}
+#title h1 {
+	font: 4.5em Lato;
+}
+#title p {
+	padding: 30px 15%;
+}
+p {
+	font: 1em/2 Verdana;
+}
+hr {
+	width: 110px;
+	border: 0;
+	border-top: 2px solid #fff;
+	margin: 13px auto 55px auto;
+}
+#story, #recipe, #menu {
+	padding: 120px 0;
+}
+#story {
+	background: #962323;
+}
+#story .container, 
+#footer1 .container, 
+#footer2 .container  {
+	overflow: auto;
+}
+#story img {
+	width: 40%;
+	height: 40vh;
+	object-fit: cover;
+	margin: 0 10% 0 0;
+	float: left;
+}
+#story article {
+	width: 50%;
+	float: left;
+	text-align: center;
+	color: #fff;
+	padding: 50px 0 0 0;
+}
+h2 { 
+	font: 3.5em Cookie;
+}
+h3 {
+	font: bold 1em Verdana;
+	color: #0b0c0d;
+	text-transform: uppercase;
+}
+h3 span {
+	color: #c8235d;
+	float: right;
+}
+h4 {
+	font: 1.1em Verdana;
+	margin: 0 0 45px 0;
+}
+#recipe {
+	background: #25262a url('img/bg.jpg') right/cover no-repeat;
+	color: #fff;
+	text-align: center;
+}
+#recipe hr, #menu hr {
+	border-top-color: #c8235d;
+}
+#recipe p {
+	/* width: 50%; */
+	max-width: 540px;
+	margin: auto;
+	/* padding: 0 25%; */
+}
+#menu {
+	background: #f3f4f7;
+	padding: 120px 0 0 0;
+}
+#menu h2 {
+	text-align: center;
+}
+#menu .container div {
+	column-count: 2;
+	column-gap: 17%;
+}
+#menu article {
+	margin: 0 0 60px 0;
+}
+#gallery {
+	white-space: nowrap;
+	overflow: hidden;
+}
+#footer1 {
+	padding: 85px 0;
+	background: #25262a;
+	color: #fff;
+}
+#footer1 section {
+	float: left;
+	width: 17%;
+	padding: 0 0 0 40px;
+}
+#footer1 section:first-child {
+	width: 25%;
+	padding: 0;
+}
+#footer1 section:last-child {
+	width: 24%;
+	padding: 0 0 0 30px;
+}
+#footer1 img {
+	margin: 0 0 50px 0;
+}
+#footer1 a {
+	font: .9em/2.5 Verdana;
+	color: #fff;
+}
+#footer1 i {
+	color: #c0235a;
+	margin: 0 15px 0 0;
+}
+#footer2 {
+	padding: 60px 0 40px 0;
+	background: #16171b;
+	color: #8b8b8d;
+}
+#footer2 p {
+	float: left;
+	min-width: 25%;
+}
+#links {
+	margin: 0 45px;
+}
+#footer2 a {
+	color: #8b8b8d;
+	margin: 0 15px;
+}
+#footer2 i {
+	margin: 0 10px;
+}
+.fa-chevron-circle-up {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	font-size: 2.5em;
+	color: rgba(255,255,255, .5);
+	text-shadow: 0 0 1px silver;
+}
+
+@media only screen and (max-width: 768px) {
+	#title h1 { font-size: 2em;	}
+	#title p { line-height: 1.5; }
+	#topmenu { width: 100%; text-align: center; }
+	#topmenu li { display: block; }
+	#logo { top: 30px; left: 50%; 
+		transform: translate(-50%, 0);
+	}
+	#story img, #story article {
+		width: 100%;
+	}
+	#menu .container div {
+		column-count: 1;
+		padding: 0 10px;
+	}
+	#gallery img {
+		width: 100%;
+	}
+	#footer1 section {
+		width: 33%;
+		padding: 0;
+		text-align: center;
+	}
+	#footer1 section:first-child,
+	#footer1 section:last-child {
+		width: 100%;
+		padding: 0;
+	}
+	h4 {
+		margin: 30px 0 20px 0;
+	}
+	#footer2 p {
+		width: 100%;
+		margin: 20px 0;
+		text-align: center;
+	}
+}
